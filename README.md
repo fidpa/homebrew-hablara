@@ -5,8 +5,7 @@ Offizielles Homebrew Tap für [Hablará](https://github.com/fidpa/hablara) - KI-
 ## Installation
 
 ```bash
-brew tap fidpa/hablara
-brew install --cask hablara
+brew install --cask fidpa/hablara/hablara
 ```
 
 ## Updates

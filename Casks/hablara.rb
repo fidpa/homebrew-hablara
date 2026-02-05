@@ -3,12 +3,12 @@
 # ============================================================================
 # Offizielles Cask für Hablará - KI-gestützte Spracherkennung
 #
-# Installation: brew tap fidpa/hablara && brew install --cask hablara
+# Installation: brew install --cask fidpa/hablara/hablara
 # ============================================================================
 
 cask "hablara" do
   version "1.0.4"
-  sha256 "REPLACE_WITH_ACTUAL_SHA256"
+  sha256 "9972bd5dfe75c6d74e55fee0c5bf5de98e3646c643b2aaa0c74768bd479af07d"
 
   url "https://github.com/fidpa/hablara/releases/download/v#{version}/Hablara_#{version}_universal.dmg"
   name "Hablará"
@@ -35,22 +35,4 @@ cask "hablara" do
     "~/Library/Logs/com.fidpa.hablara",
     "~/Hablara",
   ]
-
-  caveats <<~EOS
-    Hablará benötigt Mikrofon-Berechtigung.
-
-    Beim ersten Start:
-    1. Systemeinstellungen → Datenschutz & Sicherheit → Mikrofon
-    2. Hablará aktivieren
-
-    Für Ollama-Integration (empfohlen):
-      brew install ollama
-      ollama pull qwen2.5:7b
-
-    Aufnahmen werden gespeichert in:
-      ~/Library/Application Support/Hablara/recordings
-
-    ⚠️ Hinweis: 'brew uninstall --zap hablara' löscht auch alle Aufnahmen.
-    Sichere deine Dateien vorher!
-  EOS
 end
