@@ -35,4 +35,13 @@ cask "hablara" do
     "~/Library/Logs/com.fidpa.hablara",
     "~/Hablara",
   ]
+
+  caveats <<~EOS
+     _  _      _    _
+    | || |__ _| |__| |__ _ _ _ __ _
+    | __ / _` | '_ \\ / _` | '_/ _` |
+    |_||_\\__,_|_.__/_\\__,_|_| \\__,_|
+
+      Finde heraus, was du sagst.
+  EOS
 end
