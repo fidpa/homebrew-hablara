@@ -7,8 +7,8 @@
 # ============================================================================
 
 cask "hablara" do
-  version "1.1.4"
-  sha256 "aadc91437e00aa7b7b7da946e73f7dc0afa35cb7c6cd250112c53de32ddbcd53"
+  version "1.1.8"
+  sha256 "2499044b11a29d2dbc84f23119c1eb98aa22342ddc05e7bd029d7727ec4ac128"
 
   url "https://github.com/fidpa/hablara/releases/download/v#{version}/Hablara_#{version}_universal.dmg"
   name "Hablará"
