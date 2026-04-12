@@ -63,4 +63,4 @@ curl -fsSL https://raw.githubusercontent.com/fidpa/hablara/main/scripts/setup-ol
 
 ## Lizenz
 
-MIT License - siehe [Hablará Repository](https://github.com/fidpa/hablara) für Details.
+Source-Available — alle Rechte vorbehalten. Siehe [Hablará Repository](https://github.com/fidpa/hablara) für Details.

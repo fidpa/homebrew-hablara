@@ -10,10 +10,10 @@ cask "hablara" do
   version "1.6.8"
   sha256 "b9bad50ebfeb11bfbd33cd6a4e40000f9fad5034d881a7e2f883c6a36bd5123b"
 
-  url "https://github.com/fidpa/hablara/releases/download/v#{version}/Hablara_#{version}_universal.dmg"
+  url "https://github.com/fidpa/hablara-releases/releases/download/v#{version}/Hablara_#{version}_universal.dmg"
   name "Hablará"
   desc "KI-gestützte Spracherkennung mit lokaler Analyse"
-  homepage "https://github.com/fidpa/hablara"
+  homepage "https://github.com/fidpa/hablara-releases"
 
   livecheck do
     url :url
