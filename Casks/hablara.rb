@@ -10,7 +10,7 @@ cask "hablara" do
   version "1.7.7"
   sha256 "c9fcd61755ebcb270050b21dc0744001570d6ac138109842bce18f6aff40c3f6"
 
-  url "https://github.com/fidpa/hablara-releases/releases/download/v#{version}/Hablara_#{version}_universal.dmg"
+  url "https://github.com/fidpa/hablara-releases/releases/download/v#{version}/hablara-#{version}-macos-universal-free.dmg"
   name "Hablará"
   desc "KI-gestützte Spracherkennung mit lokaler Analyse"
   homepage "https://github.com/fidpa/hablara-releases"
@@ -21,19 +21,18 @@ cask "hablara" do
   end
 
   auto_updates true
-
-  depends_on macos: ">= :catalina"
+  depends_on :macos
 
   app "Hablara.app"
 
   zap trash: [
+    "~/Hablara",
     "~/Library/Application Support/com.fidpa.hablara",
     "~/Library/Caches/com.fidpa.hablara",
+    "~/Library/Logs/com.fidpa.hablara",
     "~/Library/Preferences/com.fidpa.hablara.plist",
     "~/Library/Saved Application State/com.fidpa.hablara.savedState",
     "~/Library/WebKit/com.fidpa.hablara",
-    "~/Library/Logs/com.fidpa.hablara",
-    "~/Hablara",
   ]
 
   caveats <<~EOS
