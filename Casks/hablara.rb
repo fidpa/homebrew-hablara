@@ -20,6 +20,9 @@ cask "hablara" do
     strategy :github_latest
   end
 
+  # Hablará ist seit 25.10.2026 eingestellt, fortgeführt wird Saytrue.
+  disable! date: "2026-10-25", because: :discontinued
+
   auto_updates true
   depends_on :macos
 
